@@ -1,0 +1,330 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #777777;
+    background: url("../images/wavy-dots.png");
+    line-height: 1.6;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #777777;
+}
+
+span {
+    color: #dde;
+    padding: 3px;
+}
+
+.navbar {
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.navlinks {
+    float: right;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #ccc;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: #bebfc0;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: #bebfc0;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #e6b8d7;
+}
+
+
+/* selected link */
+
+a:active {
+    color: #a9bfdf;
+}
+
+a {
+    text-decoration: none;
+}
+
+#myname {
+    float: left;
+    text-align: center;
+    background: #4aaaa5;
+    padding: 11px;
+    color: #ffffff;
+    font-family: Cambria, Georgia, serif;
+    font-size: 30px;
+}
+
+#content {
+    min-height: 100%;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#content::after {
+    content: "";
+    display: block;
+}
+
+#main {
+    background-color: #ffffff;
+    position: absolute;
+    top: 150px;
+    width: 960px;
+    border: 1px solid #ccc;
+}
+
+.text {
+    padding: 5%;
+}
+
+.footer {
+    background-color: #666666;
+    height: 70px;
+    width: 100%;
+    color: #ccc;
+    border-top: 8px solid #4aaaa5;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+}
+
+.innercontainer {
+    padding: 20px;
+}
+
+.tealtext {
+    color: #4aaaa5;
+    font-family: Cambria, Georgia, serif;
+}
+
+hr {
+    border: 1px solid#dddddd;
+    margin: 0px 20 0 20;
+}
+
+
+/* Contact form */
+
+input[type=text] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Contact button */
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+}
+
+.textwrapper {
+    margin: 5px 0;
+    padding: 12px;
+}
+
+
+/* Portfolio */
+
+.portfoliobox {
+    background: url("../images/portfoliocat.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    height: 160px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin: 20px;
+}
+
+h3 {
+    background-color: #4aaaa5;
+    font-family: Cambria, Georgia, serif;
+    padding: 4px;
+}
+
+.portfoliotext {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.cats {
+    background: url('../images/codingcat.png') no-repeat center;
+    width: 290px;
+    height: 250px;
+    margin-right: 15px;
+    margin-bottom: 18px;
+    float: left;
+}
+
+.cats:hover {
+    background: url('../images/breadcat.jpg') no-repeat center;
+}
+
+
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+
+@media screen and (max-width: 980px) {
+    .navbar {
+        width: 800px;
+    }
+    #content {
+        width: 800px;
+    }
+    #main {
+        width: 800px;
+    }
+}
+
+
+/************************************************************************************
+    smaller than 768
+    *************************************************************************************/
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 700px;
+    }
+    #content {
+        width: 700px;
+    }
+    #main {
+        width: 700px;
+    }
+    .portfoliobox {
+        background: url("../images/portfoliocat.jpg");
+        background-repeat: no-repeat;
+        background-size: 180px 180px;
+        height: 140px;
+        width: 180px;
+        margin: 10px;
+    }
+}
+
+
+/************************************************************************************
+    smaller than 640
+    *************************************************************************************/
+
+@media screen and (max-width: 640px) {
+    header {
+        position: fixed;
+        margin: 0px 0 0 0;
+        z-index: 1;
+    }
+    #myname {
+        text-align: center;
+        font-family: Shrikhand, Georgia, serif;
+        font-size: 40px;
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+        border-bottom: 1px solid #777777;
+        background-color: #ffffff;
+    }
+    .navlinks {
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    #content {
+        width: 550px;
+    }
+    #main {
+        width: 550px;
+    }
+    .portfoliobox {
+        background: url("../images/portfoliocat.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 440px;
+        width: 100%;
+        margin: auto;
+    }
+    .portfoliotext {
+        width: 100%;
+        bottom: 100px;
+    }
+    h3 {
+        background-color: #4aaaa5;
+        font-family: Cambria, Georgia, serif;
+        font-size: 25px;
+    }
+    .text {
+        width: 90%;
+        margin: auto;
+        padding: 5%;
+    }
+    body {
+        font-size: 1.25rem;
+    }
+    .cats {
+        background-size: 500px 500px;
+        width: 90%;
+        height: 400px;
+        margin-right: 15px;
+        margin-bottom: 18px;
+        padding: 5%;
+    }
+    .cats:hover {
+        background-size: 500px 500px;
+    }
+}
